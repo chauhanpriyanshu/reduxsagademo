@@ -1,0 +1,53 @@
+.main{
+    // Use variables for easy code reusability and modifiability
+    $padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $padding;
+
+    // Notice how we can use calculations using calc on variables
+    height: calc(100vh - (2 * $padding));
+
+    // With SCSS, nesting styles is also possible
+    .weather-cta{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+        .app-heading{
+            margin: 0;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 36px;
+            margin-bottom: 24px;
+        }
+        .app-user-cta{
+            display: flex;
+            .app-txt-box{
+                border-radius: 12px;
+                padding: 8px;
+                border: 1px solid #b1abba;
+                user-select: none;
+                outline: none;
+                letter-spacing: 0.05em;
+                margin-right: 16px;
+                font-size: 16px;
+            }
+            .app-action-btn{
+                background-color: #0059b1;
+                border-radius: 12px;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                margin: 0;
+            }
+        }
+    }
+}
